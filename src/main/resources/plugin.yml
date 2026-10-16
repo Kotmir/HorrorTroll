@@ -1,0 +1,21 @@
+name: HorrorTroll
+version: 2.0
+main: tech.kotmir.horrortroll.HorrorTroll
+api-version: '1.21'
+authors: [Kotmir]
+description: Масштабный плагин для хоррор-троллинга с GUI меню
+
+commands:
+  error:
+    description: Вызывает зависание на 4-5 сек и кикает с кастомной ошибкой
+    usage: /error <ник> <текст>
+    permission: horrortroll.use
+  troll:
+    description: Открывает GUI-меню троллинга над игроком
+    usage: /troll <ник>
+    permission: horrortroll.use
+
+permissions:
+  horrortroll.use:
+    description: Доступ ко всем функциям троллинга
+    default: op
